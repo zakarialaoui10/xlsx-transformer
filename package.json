@@ -1,0 +1,33 @@
+{
+  "name": "xlsx-transformer",
+  "version": "0.0.0",
+  "description": "A universal plugin for importing .xls and .xlsx files directly as ZikoJS Matrix.",
+  "keywords": [
+    "zikojs",
+    "xlsx",
+    "sheet",
+    "tranformer",
+    "plugin",
+    "vite",
+    "withastro"
+  ],
+  "homepage": "https://github.com/zakarialaoui10/xls-transformer#readme",
+  "bugs": {
+    "url": "https://github.com/zakarialaoui10/xls-transformer/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zakarialaoui10/xls-transformer.git"
+  },
+  "license": "MIT",
+  "author": "zakaria elalaoui",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "create-vite": "^7.1.0",
+    "xlsx": "^0.18.5"
+  }
+}

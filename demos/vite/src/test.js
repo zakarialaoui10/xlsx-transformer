@@ -1,5 +1,9 @@
+import { Matrix } from "ziko"
 import sheets from "./wc-data.xls"
-console.log(sheets)
+console.log(sheets["data-1"].data instanceof Matrix)
+console.log(sheets["data-1"])
+
+
 // import * as XLSX from 'xlsx';
 
 // const buffer = await fetch('/wc-data.xls').then(r => r.arrayBuffer());

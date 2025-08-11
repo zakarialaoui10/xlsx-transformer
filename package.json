@@ -1,15 +1,17 @@
 {
   "name": "xlsx-transformer",
   "version": "0.0.0",
-  "description": "A universal plugin for importing .xls and .xlsx files directly as ZikoJS Matrix.",
+  "description": "An universal plugin for importing .xls and .xlsx files directly as ZikoJS Matrix.",
   "keywords": [
     "zikojs",
+    "excel",
     "xlsx",
     "sheet",
     "tranformer",
     "plugin",
     "vite",
-    "withastro"
+    "withastro",
+    "matrix"
   ],
   "homepage": "https://github.com/zakarialaoui10/xls-transformer#readme",
   "bugs": {

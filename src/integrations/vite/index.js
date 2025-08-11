@@ -9,17 +9,25 @@ export default function XlsxTransformer() {
         const buffer = fs.readFileSync(id);
         const workbook = XLSX.read(buffer, { type: 'buffer' });
         const sheets = {};
-        workbook.SheetNames.forEach(sheetName => {
-          sheets[sheetName] = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName]);
-          // sheets[sheetName] = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName], { header: 1 });
 
+        workbook.SheetNames.forEach(sheetName => {
+          if (workbook.Sheets[sheetName]?.A1) {
+            const [header, ...data] = XLSX.utils.sheet_to_json(
+              workbook.Sheets[sheetName],
+              { header: 1 }
+            );
+            sheets[sheetName] = { header, data };
+          }
         });
-        // console.log(JSON.stringify(sheets))
-        // Export JSON
+        
         return {
           code: `
-          const sheets = ${JSON.stringify(sheets)}
-          export default sheets
+            import { Matrix } from 'ziko';
+            const sheetsRaw = ${JSON.stringify(sheets)};
+            Object.keys(sheetsRaw).forEach(name => {
+              sheetsRaw[name].data = new Matrix(sheetsRaw[name].data);
+            });
+            export default sheetsRaw;
           `,
           map: null,
         };

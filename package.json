@@ -26,8 +26,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "exports": {
+    "./vite": {
+      "import": "./src/integrations/vite/index.js"
+    }
+  },
   "dependencies": {
-    "create-vite": "^7.1.0",
     "xlsx": "^0.18.5"
   }
 }

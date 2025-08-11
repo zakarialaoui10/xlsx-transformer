@@ -3,6 +3,8 @@ import XlsxTranformer from "xlsx-transformer/vite"
 
 export default defineConfig({
     plugins:[
-        XlsxTranformer()
+        XlsxTranformer({
+            firstSheetOnly : true
+        })
     ]
 });

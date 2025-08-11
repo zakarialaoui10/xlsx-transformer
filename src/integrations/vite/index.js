@@ -11,6 +11,8 @@ export default function XlsxTransformer() {
         const sheets = {};
         workbook.SheetNames.forEach(sheetName => {
           sheets[sheetName] = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName]);
+          // sheets[sheetName] = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName], { header: 1 });
+
         });
         // console.log(JSON.stringify(sheets))
         // Export JSON

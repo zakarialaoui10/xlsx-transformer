@@ -29,9 +29,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "exports": {
-    "./vite": {
-      "import": "./src/integrations/vite/index.js"
-    }
+    "./*": "./src/integrations/*/index.js"
   },
   "dependencies": {
     "xlsx": "^0.18.5",

@@ -1,6 +1,6 @@
 {
   "name": "xlsx-transformer",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "An universal plugin for importing .xls and .xlsx files directly as ZikoJS Matrix.",
   "keywords": [
     "zikojs",
@@ -33,6 +33,6 @@
   },
   "dependencies": {
     "xlsx": "^0.18.5",
-    "ziko": "^0.35.1"
+    "ziko": "^0.40.1"
   }
 }

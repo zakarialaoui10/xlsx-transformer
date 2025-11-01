@@ -32,7 +32,7 @@ export default defineConfig({
 });
 
 ```
-<!-- ### Astro 
-```
+<!-- ### Astro loader
+``` 
 
 ``` -->

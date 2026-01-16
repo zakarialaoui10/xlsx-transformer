@@ -2,7 +2,7 @@
 <!-- 
 other approach
 fix security issue  
- -->
+ --> 
 # xls-transformer
 A plugin that allows you to import `.xls` / `.xlsx` files directly in JavaScript/TypeScript as either:
 - **First sheet only :** returns header and data as named exports.
